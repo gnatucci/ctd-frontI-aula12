@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesa de trabalho 12</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .corpo {
+            width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        main {
+            margin: 40px;
+        }
+        div {
+            margin: 10px;
+        }
+
+        label {
+            display: inline-block;
+        }
+        
+        input {
+            margin-top: 10px;
+        }
+        
+        small {
+            display: block;
+        }
+
+        .ano1 {
+            float: left;
+            margin-right: 20px
+        }
+
+
+    </style>
+</head>
+<body>
+    <main class="corpo">  
+         <div class="formulario">
+            <form action="/cadastro" method="post"> 
+                <div>
+                    <h4 class="localizacao__titulo">Localização</h4>
+                    <input id="localizacao" type="text" placeholder="Digite seu estado ou cidade">
+                </div>
+                <hr>
+
+                <div>
+                    <h4>Ofertas</h4>
+                    <input id="ofertas" name="oferta" type="checkbox" value="Black_feriadao">
+                    <label for="ofertas">Black feirão</label>  
+                          
+                </div>
+                <hr>
+                <div>
+                    <h4>O que é interessante para você?</h4>
+                    <div>
+                        <input id="super__preco" name="interessante" type="checkbox" value="Super_preco"> 
+                        <label for="super__preco">Super Preço</label> <br>
+                        <input type="checkbox" name="interessante"values="Car_delivery">
+                        <label for="">Car delivery</label> <br>
+                        <input type="checkbox" name="interessante" values="Troca_+_Troco">
+                        <label for=""> Troca + Troco</label>
+                    </div>
+                </div>
+                <div>
+                    <h4>Carros</h4>
+                        <input type="checkbox" name="carros" values="novos">
+                        <label for="">Novos</label>
+                        <input type="checkbox" name="carros" values="usados"> 
+                        <label for="">Usados</label>                        
+                    </div>
+                </div>
+                <div>
+                    <h4>Ano</h4>
+                    <div class="ano">
+                        <div class="ano1">
+                            <input type="text"id="ano" name="ano" placeholder="de">
+                            <small>ex.: 2014</small>
+                        </div>
+                        <div class="ano2">
+                            <input type="text"id="ano" name="ano" placeholder="até">
+                            <small>ex.: 2019</small>
+                        </div>
+                    </div>
+                    <hr>
+                    
+                    <h4>Preço</h4>
+                    <div>
+                        <input type="text"id="" name="" placeholder="de" placeholder="de">
+                        <small>ex.: 20.000</small>
+                        <input type="text"id="" name="" placeholder="até" placeholder="até">
+                        <small>ex.: 50.000</small>
+                    </div>
+                    <hr>
+
+                    <h4>Quilometragem</h4>
+                    <div>
+                        <input type="text"id="" name="" placeholder="de" placeholder="de">
+                        <small>ex.: 10.000</small>
+                        <input type="text"id="" name="" placeholder="até" placeholder="até">
+                        <small>ex.: 50.000</small>
+                    </div>
+                    <hr>
+                    
+                    
+                    
+                    
+                </div>
+            
+                
+
+                
+            
+
+
+            </div>
+        </form>
+        </div>
+    </main>
+</body>
+</html>
